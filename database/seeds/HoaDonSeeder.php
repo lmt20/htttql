@@ -11,7 +11,8 @@ class HoaDonSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\HoaDon::class, 3000)->create();
+        // factory(App\HoaDon::class, 30)->create();
+        factory(App\HoaDon::class, 4000)->create();
         
     }
 }

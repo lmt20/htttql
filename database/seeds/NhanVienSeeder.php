@@ -11,6 +11,7 @@ class NhanVienSeeder extends Seeder
      */
     public function run()
     {
+        // factory(App\NhanVien::class, 30)->create();
         factory(App\NhanVien::class, 300)->create();
         
     }

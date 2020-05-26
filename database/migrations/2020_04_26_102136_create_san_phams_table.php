@@ -18,6 +18,7 @@ class CreateSanPhamsTable extends Migration
             $table->unsignedBigInteger('id_hang_san_pham');
             $table->unsignedBigInteger('id_co_so');
             $table->string('ten');
+            $table->string('hinh_anh');
             $table->double('gia_ban');
             $table->text('mo_ta');
             $table->foreign('id_hang_san_pham')

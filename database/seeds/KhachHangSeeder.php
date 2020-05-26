@@ -11,6 +11,7 @@ class KhachHangSeeder extends Seeder
      */
     public function run()
     {
+        // factory(App\KhachHang::class, 10)->create();
         factory(App\KhachHang::class, 1000)->create();
     }
 }

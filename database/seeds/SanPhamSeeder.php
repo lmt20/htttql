@@ -11,7 +11,7 @@ class SanPhamSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\SanPham::class, $GLOBALS['totalSmartPhoneName'])->create();
+        factory(App\SanPham::class, count($GLOBALS['products']))->create();
         
     }
 }
