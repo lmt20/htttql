@@ -12,6 +12,9 @@ class SanPhamBanSeeder extends Seeder
     public function run()
     {
         factory(App\SanPhamBan::class, 4000)->create();
+        // factory(App\SanPhamBan::class, 10)->create();
+
+
         
     }
 }

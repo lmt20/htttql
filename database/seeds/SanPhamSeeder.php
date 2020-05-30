@@ -11,7 +11,14 @@ class SanPhamSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\SanPham::class, count($GLOBALS['products']))->create();
+        $products = factory(App\SanPham::class, count($GLOBALS['products']))->create();
+        foreach($products as $product){
+            factory(App\SanPhamLuuTru::class)->create([
+                'id_san_pham' => $product->id,
+                'id_co_so' => $product->id_co_so,
+                'so_luong' => rand(100, 500)
+           ]);
+        }
         
     }
 }
